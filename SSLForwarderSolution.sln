@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SSLForwarder", "SSLForwarderService\SSLForwarder.ccproj", "{52797E48-91B5-4AAE-A53C-A7E78AC2F90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSLForwarderRole", "WebRole1\SSLForwarderRole.csproj", "{1B4AEF88-3660-4A15-9F3D-4E4D33CB85E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SslForwarder.WebSite", "SslForwarder.WebSite\SslForwarder.WebSite.csproj", "{B6F35CB4-B0FB-4C52-A46C-A778BCACA687}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52797E48-91B5-4AAE-A53C-A7E78AC2F90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52797E48-91B5-4AAE-A53C-A7E78AC2F90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52797E48-91B5-4AAE-A53C-A7E78AC2F90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52797E48-91B5-4AAE-A53C-A7E78AC2F90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B4AEF88-3660-4A15-9F3D-4E4D33CB85E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4AEF88-3660-4A15-9F3D-4E4D33CB85E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4AEF88-3660-4A15-9F3D-4E4D33CB85E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4AEF88-3660-4A15-9F3D-4E4D33CB85E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F35CB4-B0FB-4C52-A46C-A778BCACA687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F35CB4-B0FB-4C52-A46C-A778BCACA687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F35CB4-B0FB-4C52-A46C-A778BCACA687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F35CB4-B0FB-4C52-A46C-A778BCACA687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

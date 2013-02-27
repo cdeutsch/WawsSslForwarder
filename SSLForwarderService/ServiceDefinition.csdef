@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="SslForwarder" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-10.1.8">
+  <WebRole name="SSLForwarderRole" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+          <!-- look for step #2.3 http://www.windowsazure.com/en-us/develop/net/common-tasks/enable-ssl/ -->
+          <Binding name="Endpoint2" endpointName="secure" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+      <!-- look for step #2.2 http://www.windowsazure.com/en-us/develop/net/common-tasks/enable-ssl/ -->
+      <InputEndpoint name="secure" protocol="https" port="443" certificate="Certificate1" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <Startup>
+      <Task commandLine="setupARR.cmd &gt; c:\setuparr.log" executionContext="elevated" />
+    </Startup>
+    <Runtime executionContext="elevated" />
+    <!-- look for step #2.1 http://www.windowsazure.com/en-us/develop/net/common-tasks/enable-ssl/ -->
+    <Certificates>
+      <Certificate name="Certificate1" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
+    <ConfigurationSettings>
+    </ConfigurationSettings>
+  </WebRole>
+</ServiceDefinition>
