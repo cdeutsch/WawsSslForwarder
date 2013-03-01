@@ -3,7 +3,7 @@
   <Role name="SSLForwarderRole">
     <Instances count="2" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=bradystorage;AccountKey=T29fSXyrahVgDrIK4hrkJHdpURej1Yp7rgpGsUdwk5utZn7P1zX01zfnZmIo9oYwmz5CqH1gPgpxfNjSgUEJYA==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
     </ConfigurationSettings>
     <Certificates>
